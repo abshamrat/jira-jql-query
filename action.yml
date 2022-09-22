@@ -1,0 +1,15 @@
+name: Jira JQL Query
+description: Search JIRA issue by JQL
+branding:
+  icon: 'chevron-right'
+  color: 'blue'
+inputs:
+  jql:
+    description: JIRA JQL Query 
+    required: true
+  fields:
+    description: Fields only want to grab. e.g. 'id,key,status' 
+    required: false
+runs:
+  using: 'node12'
+  main: './dist/index.js'
